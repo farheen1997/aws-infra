@@ -1,2 +1,2 @@
-BUCKET = "terra-test-bucket"
-ENV = "Dev"
+bucket = "terra-mera-bucket"
+env = "Dev"

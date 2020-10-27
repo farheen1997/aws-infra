@@ -2,17 +2,15 @@ provider "aws" {
   region = "ap-south-1"
 }
 
-resource "aws_s3_bucket" "b" {
-  bucket = "var.BUCKET"
+resource "aws_s3_bucket" "s" {
+  bucket = var.bucket
   acl    = "private"
 
     versioning {
-    enabled = true
+    enabled = "false"
   }
 
   tags = {
-    Name        = "terra-test-bucket"
-    Environment = "var.ENV"
-    KEY         = "VALUE"
+    Environment = var.env
   }
 }

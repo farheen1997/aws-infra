@@ -1,7 +1,7 @@
-variable "BUCKET" {
+variable "bucket" {
   type        = string
 }
 
-variable "ENV" {
+variable "env" {
   type        = string
 }
