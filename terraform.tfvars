@@ -1,1 +1,2 @@
-region = "ap-south-1"
+BUCKET = "terra-test-bucket"
+ENV = "Dev"

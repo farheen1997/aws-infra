@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "b" {
-  bucket = "terra-test-bucket"
+  bucket = "var.BUCKET"
   acl    = "private"
 
     versioning {
@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "b" {
 
   tags = {
     Name        = "terra-test-bucket"
-//    Environment = "Dev"
+    Environment = "var.ENV"
     KEY         = "VALUE"
   }
 }
