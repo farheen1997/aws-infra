@@ -1,7 +1,11 @@
-variable "bucket" {
+variable "BUCKET" {
   type        = string
 }
 
-variable "env" {
+variable "ENV" {
+  type        = string
+}
+
+variable "REGION" {
   type        = string
 }

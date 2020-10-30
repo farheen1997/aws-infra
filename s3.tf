@@ -1,9 +1,9 @@
 provider "aws" {
-  region = "ap-south-1"
+  region = var.REGION
 }
 
 resource "aws_s3_bucket" "s" {
-  bucket = var.bucket
+  bucket = var.BUCKET
   acl    = "private"
 
     versioning {
@@ -11,6 +11,6 @@ resource "aws_s3_bucket" "s" {
   }
 
   tags = {
-    Environment = var.env
+    Environment = var.ENV
   }
 }
